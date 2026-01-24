@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: rgb(66, 184, 131);
+}   
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/tip.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #035843;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #035843;
+    background: #035843;
+    transition: 1s;
+}
+
+
+.updates {
+    width: 80%;
+    margin: auto;
+    text-align: center ;
+    padding-top: 100px;
+}
+.updates h1 {
+    font-size: 36px;
+    font-weight: 600;  
+}
+.updates p {
+    font-size: 16px;
+    
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Climate Tip Widget - Rewritten CSS */
+
+/* Define CSS Variables for colors */
+:root {
+    --widget-bg-color: #ffffff;
+    --widget-border-color: #e0e0e0;
+    --widget-title-color: #2c3e50;
+    --widget-text-color: #34495e;
+    --button-bg-color: #2ecc71; /* Green shade */
+    --button-hover-bg-color: #27ae60; /* Darker green */
+    --button-text-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.widget {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: var(--widget-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--widget-text-color);
+}
+
+.widget h2 {
+    font-size: 28px;
+    color: var(--widget-title-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.widget-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.widget-content p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 0; /* Reset margin as gap handles spacing */
+    padding: 0 15px; /* Add some horizontal padding for smaller screens */
+}
+
+#new-tip-btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#new-tip-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .widget {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .widget h2 {
+        font-size: 24px;
+    }
+
+    .widget-content p {
+        font-size: 17px;
+    }
+
+    #new-tip-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .widget {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .widget h2 {
+        font-size: 20px;
+    }
+
+    .widget-content p {
+        font-size: 16px;
+    }
+}
+
+.calculator {
+    width: 80%;
+    margin: auto;
+    text-align: center ;
+    padding-top: 100px;
+}
+
+.calculator h2 {
+    font-size: 36px;
+    font-weight: 600;  
+}
+.calculator p {
+    font-size: 16px;
+    
+    line-height: 22px;
+    padding: 10px;
+}
