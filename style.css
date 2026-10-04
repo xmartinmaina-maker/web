@@ -204,20 +204,3 @@ nav img{
     }
 }
 
-.calculator {
-    width: 80%;
-    margin: auto;
-    text-align: center ;
-    padding-top: 100px;
-}
-
-.calculator h2 {
-    font-size: 36px;
-    font-weight: 600;  
-}
-.calculator p {
-    font-size: 16px;
-    
-    line-height: 22px;
-    padding: 10px;
-}
